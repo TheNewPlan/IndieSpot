@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'search/search'
+  post 'search/search'
 
   root :to => 'home#index'
 

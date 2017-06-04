@@ -1,6 +1,7 @@
 class MusicViewController < ApplicationController
   @musics = ''
   @lineNumber = 1
+
   def albumSort
     @lineNumber = 1
     @musics = Music.order("lower(album)")
