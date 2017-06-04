@@ -1,0 +1,27 @@
+<h1>Sorted by Genre</h1>
+<p>
+<table>
+  <thead>
+  <tr>
+    <th><%= link_to "Song", music_view_songSort_path %></th>
+    <th><%= link_to "Album", music_view_albumSort_path %></th>
+    <th><%= link_to "Band", music_view_bandSort_path %></th>
+    <th><%= link_to "Genre", music_view_genreSort_path %></th>
+    <th><%= link_to "Release", music_view_releaseSort_path %></th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @musics.each do |music| %>
+      <tr>
+        <td><%= music.song %></td>
+        <td><%= music.album %></td>
+        <td><%= music.band %></td>
+        <td><%= music.genre %></td>
+        <td><%= music.release %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+</p>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  song: MyString
+  album: MyString
+  band: MyString
+  genre: MyString
+  release: 2017-06-03
+
+two:
+  song: MyString
+  album: MyString
+  band: MyString
+  genre: MyString
+  release: 2017-06-03
