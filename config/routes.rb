@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'search/search'
+
   root :to => 'home#index'
 
   get 'music_view/albumSort'
