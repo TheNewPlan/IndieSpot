@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+#This is the parsing for seeding music from the musicSeed.txt
+csv_text = File.read('app/assets/musicSeed.txt')
+csv_text = CSV.parse(csv_text, :headers => true, :col_sep => "\t")
+csv_text.each do |row|
+  Music.create(song: row[0], album: row[1], band: row[2], genre: row[3], release:row[4])
+end

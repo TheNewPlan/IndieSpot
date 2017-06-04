@@ -1,28 +1,28 @@
 class MusicViewController < ApplicationController
-  @albums = ''
+  @musics = ''
   @lineNumber = 1
   def albumSort
     @lineNumber = 1
-    @albums = Music.order('album')
+    @musics = Music.order("lower(album)")
   end
 
   def bandSort
     @lineNumber = 1
-    @albums = Music.order('band')
+    @musics = Music.order("lower(band)")
   end
 
   def songSort
     @lineNumber = 1
-    @albums = Music.order('song')
+    @musics = Music.order("lower(song)")
   end
 
   def genreSort
     @lineNumber = 1
-    @albums = Music.order('genre')
+    @musics = Music.order('genre')
   end
 
   def releaseSort
     @lineNumber = 1
-    @albums = Music.order('release')
+    @musics = Music.order('release')
   end
 end

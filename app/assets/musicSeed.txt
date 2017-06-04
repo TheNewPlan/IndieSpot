@@ -1,0 +1,20 @@
+song	album	band	genre	release
+dogs	still bummed	nouns	Experimental Punk	March 1, 2013
+still bummed	still bummed	nouns	Experimental Punk	March 1, 2013
+school bus	still bummed	nouns	Experimental Punk	March 1, 2013
+conch	still bummed	nouns	Experimental Punk	March 1, 2013
+yaw	still bummed	nouns	Experimental Punk	March 1, 2013
+dumped	still bummed	nouns	Experimental Punk	March 1, 2013
+way	still bummed	nouns	Experimental Punk	March 1, 2013
+you're not the one that i want	still bummed	nouns	Experimental Punk	March 1, 2013
+the graduate	still bummed	nouns	Experimental Punk	March 1, 2013
+great big 'fuck' and how i'm coping with it	still bummed	nouns	Experimental Punk	March 1, 2013
+Never Meant	American Football	American Football	Indie Rock	September 28, 1999
+The Summer Ends	American Football	American Football	Indie Rock	September 28, 1999
+Honestly?	American Football	American Football	Indie Rock	September 28, 1999
+For Sure	American Football	American Football	Indie Rock	September 28, 1999
+You Know I Should Be Leaving Soon	American Football	American Football	Indie Rock	September 28, 1999
+But the Regrets Are Killing Me	American Football	American Football	Indie Rock	September 28, 1999
+I'll See You When We're Both Not So Emotional	American Football	American Football	Indie Rock	September 28, 1999
+Stay Home	American Football	American Football	Indie Rock	September 28, 1999
+The One with the Wurlitzer	American Football	American Football	Indie Rock	September 28, 1999

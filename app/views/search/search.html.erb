@@ -1,8 +1,8 @@
 <p> <h1>Search</h1> </p>
 <%= form_tag :action => 'search' do %>
-    <p>What are you looking for?:
+    <p>What are you looking for?<br><br>
       <%= text_field_tag 'musicSearch', @mysearch %> </p>
-    <br/>
+
     <% if @results > 0 %>
         <% if @music.length >0 %>
             <p> Here are the search results:</p>
