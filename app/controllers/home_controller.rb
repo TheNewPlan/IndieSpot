@@ -89,12 +89,14 @@ class HomeController < ApplicationController
       if @musicIds.length == 0
         @musicIds = nil
       end
-
-      @musicIds.each do |sid|
-        @myMusic.push(Music.where('id = ?', sid)[0])
+      if @musicIds != nil
+          @musicIds.each do |sid|
+            @myMusic.push(Music.where('id = ?', sid)[0])
+        end
       end
     end
   end
+
 
   def saveList
     savedArray = []
@@ -124,6 +126,9 @@ class HomeController < ApplicationController
       if !fav.nil?
         savedArray.delete(fid)
       end
+    end
+    if savedArray.length == 0
+      savedArray = nil
     end
     user = User.where('id = ?', session[:user_id])[0]
     user.preferences = savedArray
