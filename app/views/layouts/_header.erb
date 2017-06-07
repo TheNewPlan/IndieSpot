@@ -5,6 +5,11 @@
       <%= link_to "About", home_about_path  %>
       <%= link_to "Music", musics_path %>
       <%= link_to "Search Music", search_search_path %>
+      <% if session[:user_id] == nil %>
+        <%= link_to "Login", home_login_path %>
+      <% else %>
+        <%= link_to "Logout", home_logout_path%>
+      <%end%>
     </td>
   </tr>
 </table>
