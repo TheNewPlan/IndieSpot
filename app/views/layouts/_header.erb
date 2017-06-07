@@ -8,6 +8,7 @@
       <% if session[:user_id] == nil %>
         <%= link_to "Login", home_login_path %>
       <% else %>
+        <%= link_to "My Account", home_user_path %>
         <%= link_to "Logout", home_logout_path%>
       <%end%>
     </td>

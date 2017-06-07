@@ -1,13 +1,17 @@
 <h1>Welcome to IndieSpot</h1>
 <p>This is an independent music library that catalogs some of the best bands that haven't seen the limelight</p>
 
-<p>Want to check out our catalog?  Create an account!</p>
+<% if session[:user_id] == nil%>
+    <p>Want to check out our catalog?  Create an account!</p>
 
-<p>New User</p>
-<p>Create New User</P>
-<%= form_tag :action => 'index' do %>
-    Username:  <%= text_field_tag 'username', @myUser %> <br>
-    Email:     <%= email_field_tag 'email', 'email@example.com'%><br>
-    Password:  <%= password_field_tag 'password', nil, maxlength: 12 %><br>
-    <%= submit_tag 'Create' %>
+    <p>Create New User</P>
+    <%= form_tag :action => 'index' do %>
+        Username:  <%= text_field_tag 'username', @myUser %> <br>
+        Email:     <%= email_field_tag 'email', 'email@example.com'%><br>
+        Password:  <%= password_field_tag 'password', nil, maxlength: 12 %><br>
+        <%= submit_tag 'Create' %>
+    <% end %>
+
+<% else %>
+    <p> Thanks for coming by IndieSpot!  All feedback or input is welcome!</p>
 <% end %>

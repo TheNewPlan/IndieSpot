@@ -1,3 +1,5 @@
+require 'digest/md5'
+REALM = "localhost"
 class HomeController < ApplicationController
   skip_before_filter :authorize
   def index

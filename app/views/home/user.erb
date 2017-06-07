@@ -30,7 +30,7 @@
         <%= submit_tag 'Remove' %>
     <% end %>
 <% else %>
-    <p>You do not have any saved Finales</p>
+    <p>You do not have any saved music.  Add some now!</p>
 <% end %>
 
 <p>IndieSpot Library</p>
@@ -48,7 +48,7 @@
       </tr>
       </thead>
       <tbody>
-      <% @myMusic.each do |music| %>
+      <% @music.each do |music| %>
           <tr>
             <td><%= check_box_tag music.id, music.id%></td>
             <td><%= music.song %></td>
