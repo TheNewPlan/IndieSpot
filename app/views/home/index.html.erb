@@ -1,8 +1,12 @@
+<%= stylesheet_link_tag "main" %>
 <h1>Welcome to IndieSpot</h1>
 <p>This is an independent music library that catalogs some of the best bands that haven't seen the limelight</p>
 
 <% if session[:user_id] == nil%>
-    <p>Want to check out our catalog?  Create an account!</p>
+    <p>Three years old, but still fresh in our minds.</p>
+    <p>Joyce Manor - Never Hungover Again</p>
+    <%= image_tag 'Never Hungover Again.png' %>
+    <p>Want to check out this and more? Create an account!</p>
 
     <p>Create New User</P>
     <%= form_tag :action => 'index' do %>
@@ -14,4 +18,10 @@
 
 <% else %>
     <p> Thanks for coming by IndieSpot!  All feedback or input is welcome!</p>
+
+    <p>In recent news, Grizzly Bear has released a new Single of their upcoming album Painted Ruins!</p>
+    <p>Click the album art to listen on Youtube.</p>
+    <p>Expect Painted Ruins on IndieSpot on August 18th!</p>
+    <%= link_to image_tag('Three Rings - Single.png'), "https://youtu.be/PZ8LB6KHHMs" %>
+
 <% end %>

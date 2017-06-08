@@ -1,0 +1,9 @@
+body
+{
+font-family: Garamond;
+background-color: #008080;
+font-color: white;
+}
+p.notice{
+    font-color: green;
+}

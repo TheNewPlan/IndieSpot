@@ -1,4 +1,6 @@
 <p> <h1>Search</h1> </p>
+<%= stylesheet_link_tag "main" %>
+
 <%= form_tag :action => 'search' do %>
     <p>What are you looking for?<br><br>
       <%= text_field_tag 'musicSearch', @mysearch %> </p>
