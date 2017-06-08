@@ -21,7 +21,8 @@ Rails.application.routes.draw do
   get 'home/user'
   get 'home/saveList'
   get 'home/removeMusic'
-
+  get 'home/newUser'
+  post 'home/newUser'
   post 'home/login'
   post 'home/index'
   post 'home/user'

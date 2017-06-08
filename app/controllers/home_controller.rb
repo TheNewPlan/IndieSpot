@@ -3,6 +3,9 @@ REALM = "localhost"
 class HomeController < ApplicationController
   skip_before_filter :authorize
   def index
+    end
+
+  def newUser
     @username = ''
     @password = ''
     @email = ''
@@ -26,16 +29,16 @@ class HomeController < ApplicationController
       @newUser.email = @email
       @newUser.password = Digest::MD5.hexdigest([@username, REALM, @password].join(":"))
       @newUser.save
-
-      user = User.find_by_username(@username)
-      if !user.nil?
-        session[:user_id] = user.id
-        redirect_to home_login_path, :notice => "Account created, Please sign in!"
-      else
-        redirect_to root_url, :notice => "User creation failed, try again."
-      end
     end
-  end
+
+    user = User.find_by_username(@username)
+    if !user.nil?
+      session[:user_id] = user.id
+      redirect_to home_login_path, :notice => "Account created, Please sign in!"
+    else
+      redirect_to root_url, :notice => "User creation failed, try again."
+    end
+    end
 
   def login
     @username = ''
